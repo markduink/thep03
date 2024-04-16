@@ -152,6 +152,16 @@
     background-color: forestgreen;
 }
 
+.pdf-container {
+    width: 100%;
+    height: 800px; /* Adjust height as needed */
+}
+
+.pdf-object {
+    width: 100%;
+    height: 100%;
+}
+
 
 .styleguideTab {
   height: 5%;
