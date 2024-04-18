@@ -51,11 +51,13 @@
 
 .homeBox {
     width: 100%;
-    height:auto;
+    height:120%;
     border-bottom-left-radius: 0.5em; /* Top left corner rounded */
   border-bottom-right-radius: 0.5em; /* Top right corner rounded */
 /*   flex:4;*/
     background-color: orangered;  
+    
+    
 }
 
 .homeTab {
@@ -144,22 +146,11 @@
 }
 
 .resumeBox {
-    width: 100%;
-    height:100%;
-    border-bottom-left-radius: 0.5em; /* Top left corner rounded */
-  border-bottom-right-radius: 0.5em; /* Top right corner rounded */
-/*   flex:4;*/
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    border-radius: 0.5em; /* Rounded corners */
     background-color: forestgreen;
-}
 
-.pdf-container {
-    width: 100%;
-    height: 800px; /* Adjust height as needed */
-}
-
-.pdf-object {
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -218,7 +209,10 @@
 
 
 
-
+.introduction {
+    text-align: center;
+    padding-right: 40%
+}
 
 
 
@@ -233,8 +227,31 @@
 
 
 
+.Overlay {
+    background-color: rgba(255, 255, 255, 0.9999);
+    padding: 20px;
+    margin: 20px auto; 
+    height: 60%;
+    max-width: 90%; 
+    
+     border-radius: 10px; 
+}
+
+.space{
+ font-size: 1px;
+    margin: 0;
+}
 
 
+
+.logo-container {
+    margin-bottom: 20px; 
+}
+
+.logo {
+    width: 50%; 
+    height: auto; 
+}
 
 
 
