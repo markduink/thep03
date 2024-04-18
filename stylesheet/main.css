@@ -1,21 +1,18 @@
-
-
 .container {
   position: absolute;
   width: 100vw;
   height: 100vh;
-
 }
 
 .boxA {
   height: 5%;
   width: 10%;
   background-color: blue;
-  border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
+  border-top-left-radius: 0.5em; 
+  border-top-right-radius: 0.5em; 
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .boxA a {
@@ -23,28 +20,39 @@
   color: white;
 }
 
-
-
 .container1 {
-  display: flex; /* Use flexbox */
+  display: flex; 
 }
 
 .boxC, .boxD {
-  width: 10%; /* Each box takes up 10% of the container's width */
-  height: 5%; /* Each box takes up 5% of the container's height */
+  width: 10%; 
+  height: 5%;
 }
 
+.container1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; 
+}
+
+@media screen and (max-width: 768px) {
+  .container1 a {
+    font-size: 10px; 
+  }
+}
 
 .boxD {
   background-color: lightgray;
-      border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
+      border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em; 
       display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center;
 }
 
 .boxD a {
+      border-top-left-radius: 0.5em; 
+  border-top-right-radius: 0.5em; 
   text-decoration: none;
   color: black;
 }
@@ -52,26 +60,13 @@
 .homeBox {
     width: 100%;
     height:120%;
-    border-bottom-left-radius: 0.5em; /* Top left corner rounded */
-  border-bottom-right-radius: 0.5em; /* Top right corner rounded */
-/*   flex:4;*/
+
+   
     background-color: orangered;  
     
     
 }
 
-.Overlay {
-    background-color: rgba(255, 255, 255, 0.9999);
-    padding: 20px;
-    margin: 20px auto;
-    height: 60%;
-    max-width: 90%;
-    border-radius: 10px;
-    display: flex; /* Ensure flexbox layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text within .Overlay */
-}
 
 .Overlay {
     background-color: rgba(255, 255, 255, 0.9999);
@@ -81,14 +76,14 @@
     max-width: 90%;
     border-radius: 10px;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .logo-container {
-    margin-bottom: 20px; /* Add some space between the image and text */
+    margin-bottom: 20px; 
 }
 
 .introduction {
@@ -97,7 +92,7 @@
 }
 
 .introduction p {
-    font-size: 30px; /* Adjust the font size as needed */
+    font-size: 30px;
 }
 
 .logo {
@@ -109,11 +104,11 @@
   height: 5%;
   width: 10%;
   background-color: orangered;
-  border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
+    border-top-left-radius: 0.5em; 
+  border-top-right-radius: 0.5em; 
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
 }
 
 
@@ -125,29 +120,35 @@
 
 
 .pulsating-image {
-     position: absolute; /* Position the image absolutely within the container */
-    left: 24.5%; /* Shift the image to the right by 20% from the left */
-    top: -17%; /* Shift the image up by 10% from the top */
-    transform: scale(0.40); /* Make the image 50% smaller */
-       opacity: 0.6; /* Set the opacity to 60% (slightly smaller) */
-    animation: pulseAnimation 2s infinite; /* Apply the pulse animation */
+     position: absolute; 
+    left: 24.5%;
+    top: -17%; 
+    transform: scale(0.40); 
+       opacity: 0.6; 
+    animation: pulseAnimation 2s infinite; 
 }
 
 @keyframes pulseAnimation {
-    0% { transform: scale(0.40); } /* Start with 50% smaller size */
-    50% { transform: scale(0.55); } /* Pulse to 60% of the original size */
-    100% { transform: scale(0.40); } /* Back to 50% smaller size */
+    0% { transform: scale(0.40); } 
+    50% { transform: scale(0.55); }
+    100% { transform: scale(0.40); }
+}
+
+@media (max-width: 1200px) {
+    .pulsating-image {
+        display: none; 
+    }
 }
 
 .projectsTab {
   height: 5%;
   width: 10%;
  background-color: greenyellow;
-  border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
+  border-top-left-radius: 0.5em; 
+  border-top-right-radius: 0.5em; 
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .projectsTab a {
@@ -158,9 +159,7 @@
 .projectsBox {
     width: 100%;
     height:auto;
-    border-bottom-left-radius: 0.5em; /* Top left corner rounded */
-  border-bottom-right-radius: 0.5em; /* Top right corner rounded */
-/*   flex:4;*/
+
     background-color: greenyellow;
 }
 
@@ -168,12 +167,12 @@
 .aboutTab {
   height: 5%;
   width: 10%;
- background-color: lightcyan;
-  border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
+ background-color: darkblue;
+  border-top-left-radius: 0.5em; 
+  border-top-right-radius: 0.5em; 
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .aboutTab a {
@@ -181,88 +180,113 @@
   color: white;
 }
 
+.aboutBox h6,
+.aboutBox p {
+    color: white;
+}
 .aboutBox {
     height: auto;
-    display: flex; /* Use flexbox layout */
-    align-items: center; /* Align items vertically */
-    padding: 20px; /* Add padding for better spacing */
-    border-radius: 1em; /* Apply border-radius to the whole box */
-    background-color: lightcyan;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+   
+    background-color: darkblue;
+    padding-bottom: 5%;
 }
 
 .aboutBox img {
-    width: 30%; /* Adjust the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 5%; /* Add some space between the image and text */
+    width: 30%; 
+    height: auto; 
+    margin-right: 5%; 
 }
 
 .aboutBox div {
-    flex: 1; /* Allow the text to take up remaining space */
+    flex: 1; 
 }
+
 .aboutBox p {
-    max-height: 60%
+    max-height: 60%; 
+    overflow-y: auto; 
+    font-size: 16px; 
+}
+
+@media screen and (max-width: 768px) {
+    .aboutBox p {
+        font-size: 14px; 
+    }
 }
 
 .resumeTab {
   height: 5%;
   width: 10%;
  background-color: forestgreen;
-  border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
+  border-top-left-radius: 0.5em; 
+  border-top-right-radius: 0.5em; 
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
 }
 
-.resumeTab a {
-  text-decoration: none;
-  color: white;
-}
+
+
 
 .resumeBox {
-    width: 100%; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed */
-    border-radius: 0.5em; /* Rounded corners */
+    width: 100%; 
+
+    height: auto; 
     background-color: forestgreen;
+    padding-bottom: 5%;
+     padding-top: 5%;
 
 }
 
 
 .styleguideTab {
-  height: 5%;
-  width: 10%;
- background-color: yellow;
-  border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
-  display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+    height: 5%;
+    width: 10%;
+    background-color: gold;
+    border-top-left-radius: 0.5em; 
+    border-top-right-radius: 0.5em; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .styleguideTab a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .styleguideBox {
     width: 100%;
     height: auto;
-    border-bottom-left-radius: 0.5em; /* Top left corner rounded */
-  border-bottom-right-radius: 0.5em; /* Top right corner rounded */
-/*   flex:4;*/
-    background-color: yellow;
+   
+    background-color: gold;
 }
 
+.styleguideBox p,
+.styleguideBox h2 {
+    max-height: 60%; 
+    overflow-y: auto; 
+    font-size: 16px; 
+}
+
+@media screen and (max-width: 768px) {
+    .styleguideBox p,
+    .styleguideBox h2 {
+        font-size: 14px; 
+    }
+}
 
 .contactTab {
   height: 5%;
   width: 10%;
  background-color: skyblue;
-  border-top-left-radius: 0.5em; /* Top left corner rounded */
-  border-top-right-radius: 0.5em; /* Top right corner rounded */
+  border-top-left-radius: 0.5em; 
+  border-top-right-radius: 0.5em; 
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .contactTab a {
@@ -272,46 +296,22 @@
 
 .contactBox {
     width: 100%;
-    height:100%;
-    border-bottom-left-radius: 0.5em; /* Top left corner rounded */
-  border-bottom-right-radius: 0.5em; /* Top right corner rounded */
-/*   flex:4;*/
+    height:60%;
     background-color: skyblue;
 }
-
-
-
-
-
-
-
-
 
 .boxB {
     width: 100%;
     height:100%;
-    border-bottom-left-radius: 0.5em; /* Top left corner rounded */
-  border-bottom-right-radius: 0.5em; /* Top right corner rounded */
-/*   flex:4;*/
+    border-bottom-left-radius: 0.5em; 
+  border-bottom-right-radius: 0.5em; 
     background-color: blue;
 }
-
-
-
 
 .space{
  font-size: 0px;
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
 
 @font-face {
     font-family: 'PPNeueMontreal-Book';
@@ -335,25 +335,21 @@
 
 body {
     background-color: whitesmoke;
-
     font-family: 'PPNeueMontreal-Book', monospace;
-    /*Changed default font to Monaco - monospace 
-      Learned from: https://www.w3schools.com/css/css_font.asp*/
-
     overflow-x: hidden;
 }
 
 img {
-    max-width: 50vw; /* Sets the maximum width of the image to 50% of the viewport width */
-    height: auto; /* Allows the height to adjust automatically to maintain aspect ratio */
-    display: block; /* Ensures that the image behaves as a block-level element */
-    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 50vw; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 h1 {
-        margin: 0;
+    margin: 0;
     padding-left: 5rem;
-        padding-top: 5rem;
+    padding-top: 5rem;
     color: black;
     font-family: 'RobotoMono', serif;
     font-size: 1.7em;
@@ -361,49 +357,52 @@ h1 {
 
 h2 {
     color: black;
+    padding-left: 2rem;
     font-size: 1.5em;
     font-family: 'RobotoMono', serif;
-    
 }
 
 h3 {
     color: black;
     font-family: 'PPNeueMontreal-Bold', serif;
     font-size: 1em;
+    padding-left: 2rem;
 }
 
 h4{
-     color:black;
-             font-family: 'PPNeueMontreal-Bold', serif;
+    color:black;
+    font-family: 'PPNeueMontreal-Bold', serif;
     font-size: 0.8em;
+    padding-left: 2rem;
 }
 
 h5{
-     color:black;
-             font-family: 'PPNeueMontreal-Bold', serif;
+    color:black;
+    font-family: 'PPNeueMontreal-Bold', serif;
     font-size: 0.5em;
+    padding-left: 2rem;
 }
 
 h6{
-     color: #ff496c;
-         font-family: 'RobotoMono', serif;
+    color: #ff496c;
+    font-family: 'RobotoMono', serif;
     font-size: 1em;
+    padding-left: 2rem;
 }
 
 p {
     margin: 0;
-
-        padding-top: 0.3rem;
+    padding-top: 0.3rem;
     font-family: 'PPNeueMontreal-Book', sans-serif;
-
     width: 50vw;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
 }
-
-/* DEFAULT STYLINGS */
 
 .text-container {
     display: inline-block;
     vertical-align: middle;
+    padding-left: 2rem;
 }
 
 .element {
@@ -428,10 +427,7 @@ p {
 .button-nav:hover,
 .button-nav:focus {
     color: #CEFF00;
-   
 }
-
-
 
 .in-text-link {
     color: #000;
@@ -440,28 +436,17 @@ p {
 .in-text-link:hover {
     color: #CEFF00;
     text-decoration: none;
-    /*Added hover state to in-text link      
-      LEARNED FROM: https://zellwk.com/blog/style-hover-focus-active-states/
-    */
 }
 
 .in-text-link:focus {
     outline: #CEFF00;
     box-shadow: 0 0 0 3px #CEFF00;
-    /*added focus state to in-text link
-      LEARNED FROM https://zellwk.com/blog/style-hover-focus-active-states/
-    */
 }
-
 
 a img:hover,
 a img:focus {
     opacity: 60%;
 }
-
-
-
-
 
 .colour-red{
     color:  #ff496c;
@@ -488,89 +473,52 @@ a img:focus {
     height: 100%;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-    .row {
-        flex-direction: column-reverse;
-    }
-
-    .col-25 {
-        margin-bottom: 20px;
-    }
-}
-
-
-
-/* NAVIGATION BAR */
-
-nav {
-    background-color: lightgray;
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-.left-nav {
-    display: flex;
-    align-items: center;
-}
-
-.left-nav a {
-    color: black;
- opacity: 90%;
-    text-decoration: none;
-    margin-right: 1.5rem;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.left-nav a:focus {
-    color: #CEFF00;
-}
-
-.right-nav {
-    display: flex;
-    align-items: center;
-}
-
-.right-nav a {
-    color: black;
- opacity: 90%;
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.right-nav a:hover {
-   color: #CEFF00;
-}
-
-.cart-icon {
-    width: 26px; /* Set the width and height of the cart icon */
-    height: 24px;
-    background-image: url(../images/bag.png);
-    background-size: cover;
-}
-
-.cart-icon:hover, .cart-icon:focus {
-    opacity: 50%;
-}
-
 @media only screen and (max-width: 768px) {
     nav {
-        padding: 0 1rem; /* Adjusted padding for smaller screens */
+        padding: 0 1rem; 
     }
-
     .left-nav,
     .right-nav {
-        margin: 0; /* Reset margin */
+        margin: 0;
     }
-  
     .right-nav a:nth-child(1) {
-        white-space: nowrap; /* Ensure "Style Guide" stays on one line */
+        white-space: nowrap;
     }
 }
 
+footer {
+    background-color: #f0f0f0;
+    padding: 2%;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.container1 a:hover {
+    color: red; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; 
+}
+
+.footer-content p {
+    font-size: 16px; 
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content p {
+        font-size: 14px; 
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: column;
+}
